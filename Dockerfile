@@ -7,7 +7,7 @@ EXPOSE 80
 WORKDIR /var/www/html
 RUN apt install unzip -y
 RUN unzip dryme.zip
-RUN cp -rvf dryme/* .
+RUN cp -rvf laundry-service-website-template/* .
 RUN rm -rvf dryme.zip
-RUN rm -rvf dryme
+RUN rm -rvf laundry-service-website-template
 ENTRYPOINT service apache2 restart && bash
