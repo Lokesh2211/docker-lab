@@ -2,12 +2,12 @@ FROM ubuntu:latest
 MAINTAINER "lokesh.dw@gmail.com"
 RUN apt update -y
 RUN apt install apache2 -y
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page278/brandon.zip /var/www/html/
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page277/dryme.zip /var/www/html/
 EXPOSE 80
 WORKDIR /var/www/html
 RUN apt install unzip -y
-RUN unzip brandon.zip
-RUN cp -rvf brandon/* .
-RUN rm -rvf brandon.zip
-RUN rm -rvf brandon
+RUN unzip dryme.zip
+RUN cp -rvf dryme/* .
+RUN rm -rvf dryme.zip
+RUN rm -rvf dryme
 ENTRYPOINT service apache2 restart && bash
