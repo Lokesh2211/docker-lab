@@ -10,4 +10,4 @@ RUN unzip icream.zip
 RUN cp -rvf ice-cream-shop-website-template/* .
 RUN rm -rvf icream.zip
 RUN rm -rvf ice-cream-shop-website-template
-RUN service apache2 start
+CMD ["httpd-foreground"]
