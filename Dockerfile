@@ -2,7 +2,7 @@ FROM ubuntu:latest
 MAINTAINER "lokesh.dw@gmail.com"
 RUN apt update -y
 RUN apt install apache2 -y
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page279/creative-design.zip /var/www/html/
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page278/freefolio.zip /var/www/html/
 EXPOSE 80
 WORKDIR /var/www/html
 RUN apt install unzip -y
