@@ -11,3 +11,4 @@ RUN cp -rvf laundry-service-website-template/* .
 RUN rm -rvf dryme.zip
 RUN rm -rvf laundry-service-website-template
 ENTRYPOINT service apache2 restart && bash
+
