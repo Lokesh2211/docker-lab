@@ -6,8 +6,8 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page279/me
 EXPOSE 80
 WORKDIR /var/www/html
 RUN apt install unzip -y
-RUN unzip brandon.zip 
-RUN cp -rvf brandon/* .
-RUN rm -rvf brandon.zip
-RUN rm -rvf brandon
+RUN unzip medion.zip 
+RUN cp -rvf medion/* .
+RUN rm -rvf medion.zip
+RUN rm -rvf medion
 ENTRYPOINT service apache2 restart && bash
