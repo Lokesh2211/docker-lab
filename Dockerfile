@@ -11,4 +11,3 @@ RUN cp -rvf medion/* .
 RUN rm -rvf medion.zip
 RUN rm -rvf medion
 ENTRYPOINT service apache2 restart && bash
-
